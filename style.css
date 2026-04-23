@@ -1,0 +1,127 @@
+body {
+    background-color: #D9FB60;
+    font-family: tahoma , sans-serif;
+    color: #ed75c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    font-size: 38px;
+    text-align: center; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ed75c1;
+    font-size: 14px;
+    max-width: 500px;
+    flex: 1;
+}
+
+#addBox {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+#btn {
+    background: white; ;
+    border: 2px solid #ed75c1;
+    color: #ed75c1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#container {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+    background: rgb(249, 218, 246);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ed75c1;
+}
+
+li button {
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+     border: 2px solid #ed75c1;
+     font-size: 14px;
+     margin-left: 10px;
+}
+
+li button:hover {
+    background: #ed75c1;
+    color: white;
+    opacity: 0.8;
+}
+
+#taskList{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+#taskList li {
+    display: grid;
+    grid-template-columns: 20px 1fr auto auto;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+    gap:10px;
+
+
+}
+    
+#taskList li span {
+   word-break: break-word;
+    text-align: left;
+}
+
+#taskList li button {
+    flex-shrink: 0;
+}
+
+#taskList li:hover {
+    background: rgb(237, 117, 193, 0.08);
+border-radius: 8px;
+}
+
+.filter-btn {
+background: transparent;
+border: 2px solid #ed75c1;
+color: black;
+padding: 5px 10px;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.filter-btn:hover {
+background: #ed75c1;
+}
+
+.filter-btn.active {
+background: #ed75c1;;
+}
+.empty {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    display: block! important;
+    margin-top: 30px;
+    font-size: 24px;
+    color: #ed75c1;
+}

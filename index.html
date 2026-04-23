@@ -1,0 +1,26 @@
+<html>
+    <head>
+<meta viewport="width=device-width, initial-scale=1.0"  charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div id="container">
+<h1>To-Do</h1>
+
+<div id="addBox">
+<input type="text" id="taskInput" placeholder="Enter a task" />
+<button id="btn" onclick="addTask()">Add Task</button>
+</div>
+
+<div id="filters">
+<button class="filter-btn" onclick="setFilter('all')">All</button>
+<button class="filter-btn" onclick="setFilter('active')">Active</button>
+<button class="filter-btn" onclick="setFilter('completed')">Completed</button>
+
+</div>
+<ul id="taskList"></ul>
+<script src="script.js"></script>
+        </div>
+    </body>
+</html> 
